@@ -3,9 +3,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.integer :role, null: false, default: 0
+      t.integer :role, null: false, default: 1
       t.string :password_digest
-      t.string :remember_digest
       t.string :picture
       t.string :phone
       t.string :address

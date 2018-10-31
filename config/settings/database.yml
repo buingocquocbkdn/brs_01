@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: ngocquoc10041995
+  host: 127.0.0.1
+  port: 3306
+
+development:
+  <<: *default
+  database: book_review_system
+
+test:
+  <<: *default
+  database: book_review_system
+
+production:
+  <<: *default
+  database: book_review_system

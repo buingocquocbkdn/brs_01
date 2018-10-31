@@ -1,8 +1,7 @@
 <% provide(:title, t(".home")) %>
-<main role="main">
-  <div class="jumbotron">
-    <div class="container">
-
-    </div>
-  </div>
-</main>
+<div class="center jumbotron">
+  <h2>
+    <%= raw t ".text"%>
+  </h2>
+  <%= link_to t(".signup"), login_path, class: "btn btn-lg btn-primary" %>
+</div>

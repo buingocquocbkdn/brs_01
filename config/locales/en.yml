@@ -1,8 +1,13 @@
 en:
   hello: "Hello world"
+  controllers:
+    sessions:
+      danger: "Invalid email/password combination"
   home_pages:
     home:
       home: "Home"
+      text: "This is the home page for the BOOK REVIEW SYSTEM sample application."
+      signup: "Login now!!!"
     contact:
       contact: "Contact me"
       facebook: "Facebook"
@@ -32,3 +37,7 @@ en:
       login: "Log in"
       email: "Email address"
       pass: "Password"
+  users:
+    new:
+      signup: "Sign up"
+      create: "Create"

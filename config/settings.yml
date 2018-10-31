@@ -2,3 +2,6 @@ user:
   phone:
     min: 10
     max: 15
+pages:
+  per_page: 10
+gravatar_size: 80

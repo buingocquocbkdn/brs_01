@@ -4,14 +4,18 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.1"
 
 gem "bootsnap", ">= 1.1.0", require: false
+gem "bootstrap", "~> 4.1.3"
 gem "coffee-rails", "~> 4.2"
 gem "config"
+gem "font-awesome-rails"
+gem "faker", "1.9.1"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails"
+gem "mysql2"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.1"
 gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
-gem "mysql2"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 

@@ -5,18 +5,17 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h5 class="card-title text-center"><%= t ".login" %></h5>
-          <form class="form-signin">
+          <%= form_for(:session, url: login_path, html: {class: "form-signin"}) do |f| %>
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-              <label for="inputEmail"><%= t ".email" %></label>
+              <%= f.label :email %>
+              <%= f.email_field :email, class: "form-control" %>
             </div>
-
             <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              <label for="inputPassword"><%= t ".pass" %></label>
+              <%= f.label :password %>
+              <%= f.password_field :password, class: "form-control" %>
             </div>
-            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit"><%= t ".login" %></button>
-          </form>
+            <%= f.submit t(".login"), class: "btn btn-lg btn-primary btn-block text-uppercase" %>
+          <% end %>
         </div>
       </div>
     </div>

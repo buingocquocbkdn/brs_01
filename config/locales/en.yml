@@ -1,5 +1,12 @@
 en:
   hello: "Hello world"
+  controllers:
+    application:
+      please_login: "Please Login First!!!"
+    sessions:
+      invalid: "Invalid email/password combination"
+    users:
+      not_found: "User not found"
   home_pages:
     home:
       home: "Home"
@@ -22,9 +29,13 @@ en:
       contact: "Contact"
       copy: "© 2018 Copyright BNQ"
     header:
+      title: "Book Review System"
       login: "Login"
-      sign_up: "Sign up"
       search: "Search"
+      profile: "Profile"
+      users: "Users"
+      book: "Book"
+      logout: "Log out"
     application:
       title: "Book Reviews System"
   sessions:

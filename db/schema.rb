@@ -23,12 +23,11 @@ ActiveRecord::Schema.define(version: 2018_10_30_061626) do
   end
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "category"
     t.string "title"
     t.string "author"
     t.text "description"
     t.string "picture"
-    t.string "size"
+    t.string "number_of_page"
     t.decimal "price", precision: 10
     t.bigint "category_id"
     t.datetime "created_at", null: false
@@ -79,9 +78,8 @@ ActiveRecord::Schema.define(version: 2018_10_30_061626) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "role", default: 0, null: false
+    t.integer "role", default: 1, null: false
     t.string "password_digest"
-    t.string "remember_digest"
     t.string "picture"
     t.string "phone"
     t.string "address"
